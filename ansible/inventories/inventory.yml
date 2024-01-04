@@ -1,0 +1,6 @@
+pibox:
+  hosts:
+    pibox-01.c0de.online
+    pibox-02.c0de.online
+  vars:
+    ansible_user: c0de
