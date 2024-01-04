@@ -5,6 +5,6 @@
     update_cache: true
     name: "{{ package }}"
     state: latest
-  failed_when: package is unset
+  failed_when: package is undefined
 
 ...
