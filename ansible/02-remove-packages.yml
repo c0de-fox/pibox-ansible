@@ -1,0 +1,14 @@
+---
+
+- name: Install Packages
+  become: true
+  hosts: pibox
+  tasks:
+    - name: Loop over packages_to_remove and remove them
+      ansible.builtin.include_role:
+        name: apt-remove-package
+      loop: "{{ packages_to_remove }}"
+      loop_control:
+        loop_var: package
+
+...

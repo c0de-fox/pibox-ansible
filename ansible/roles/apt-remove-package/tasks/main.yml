@@ -1,0 +1,10 @@
+---
+
+- name: "Remove {{ package }}"
+  ansible.builtin.apt:
+    update_cache: true
+    name: "{{ package }}"
+    state: absent
+  failed_when: package is undefined
+
+...
