@@ -1,1 +1,7 @@
 # Group Vars for pibox devices
+
+packages_to_install:
+  - tmux
+  - ufw
+  
+
