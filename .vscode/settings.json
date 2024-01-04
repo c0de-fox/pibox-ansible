@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "pibox"
-    ]
+    ],
+    "ansible.python.interpreterPath": "/home/c0de/dev/pibox-ansible/.venv/bin/python"
 }
