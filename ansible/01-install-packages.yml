@@ -1,0 +1,14 @@
+---
+
+- name: Install Packages
+  become: true
+  hosts: pibox
+  tasks:
+    - name: Loop over packages_to_install and install them
+      ansible.builtin.include_role:
+        name: apt-install-package
+      loop: packages_to_install
+      loop_control:
+        loop_var: package
+
+...

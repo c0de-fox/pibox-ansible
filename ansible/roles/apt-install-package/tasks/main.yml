@@ -1,0 +1,10 @@
+---
+
+- name: "Install {{ package }}"
+  ansible.builtin.apt:
+    update_cache: true
+    name: "{{ package }}"
+    state: latest
+  failed_when: package is unset
+
+...
