@@ -1,0 +1,9 @@
+---
+
+- name: Update the system
+  hosts: pibox
+  become: true
+  roles:
+    - role: apt-update-system
+
+...

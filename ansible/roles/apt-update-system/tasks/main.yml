@@ -1,0 +1,19 @@
+---
+
+- name: update the installed packages
+  ansible.builtin.apt:
+    update_cache: true
+    name: "*"
+    state: latest
+
+- name: update the operating system
+  ansible.builtin.apt:
+    upgrade: dist
+
+- name: clean up apt cache
+  ansible.builtin.apt:
+    autoclean: true
+    autoremove: true
+    purge: true
+
+...
