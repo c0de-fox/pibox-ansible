@@ -24,6 +24,13 @@ Some ansible playbooks to manage a [pibox](https://pibox.io) in various ways
     - If you can't resolve any hosts, check DNS. It's always DNS.
 1. Proceed to running playbooks
 
+## Running Playbooks
+
+It's recommended to use [`play.sh`](./ansible/play.sh) as it will automatically create log files for the playbooks that you execute.
+
+Its usage is: `./play.sh <playbook-name>`
+
+
 ## Fixing no SSH on latest version
 
 During install of the custom image, `pi flasher` allowed me to configure things like the hostname, ssid, my ssh key, my user account. This sets up a script that runs when the pi reboots for the first time after install.
